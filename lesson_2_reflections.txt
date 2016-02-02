@@ -2,7 +2,16 @@ What happens when you initialize a repository? Why do you need to do it?
 
 	A repository which tracks no file is created. 
 
-How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
 	
 	Staging area comes in between the working directory and the repository. 
-	It is useful for making changes regarding multiple files in a single commit.  
+	It is useful for making changes regarding multiple files in a single commit.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	By using git diff --staged, you can see the differences between the staging 
+	area and the latest commit, thus making sure that the current changes 
+	relate to just one logical change.
